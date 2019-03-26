@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
+    :author: Qin Haining (秦海宁)
     :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
+    :copyright: © 2018 Qin Haining <2364839934@qq.com | update>
     :license: MIT, see LICENSE for more details.
 """
 import os
@@ -27,6 +27,7 @@ def create_app(config_name=None):
         config_name = os.getenv('FLASK_CONFIG', 'development')
 
     app = Flask('albumy')
+    app.debug = True
     
     app.config.from_object(config[config_name])
 

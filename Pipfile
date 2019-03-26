@@ -1,11 +1,16 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
 verify_ssl = true
 name = "pypi"
 
 [dev-packages]
 faker = "*"
 watchdog = "*"
+v = {version = "*",editable = true}
+click = "*"
+run = "*"
+gunicorn = "*"
+bypy = "*"
 
 [packages]
 flask-sqlalchemy = "*"

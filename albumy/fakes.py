@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
+    :author: Qin Haining (秦海宁)
     :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
+    :copyright: © 2018 Qin Haining <2364839934@qq.com>
     :license: MIT, see LICENSE for more details.
 """
 import os
@@ -20,11 +20,11 @@ fake = Faker()
 
 
 def fake_admin():
-    admin = User(name='Grey Li',
-                 username='greyli',
-                 email='admin@helloflask.com',
+    admin = User(name='QinHaiNing',
+                 username='QinHaiNing',
+                 email='2364839934@qq.com',
                  bio=fake.sentence(),
-                 website='http://greyli.com',
+                 website='https://www.triplet.com.cn',
                  confirmed=True)
     admin.set_password('helloflask')
     notification = Notification(message='Hello, welcome to Albumy.', receiver=admin)

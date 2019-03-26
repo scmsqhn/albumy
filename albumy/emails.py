@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
+    :author: Qin Haining (秦海宁)
     :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
+    :copyright: © 2018 Qin Haining <2364839934@qq.com>
     :license: MIT, see LICENSE for more details.
 """
 from threading import Thread
@@ -11,6 +11,7 @@ from flask import current_app, render_template
 from flask_mail import Message
 
 from albumy.extensions import mail
+import pdb
 
 
 def _send_async_mail(app, message):
@@ -29,6 +30,7 @@ def send_mail(to, subject, template, **kwargs):
 
 
 def send_confirm_email(user, token, to=None):
+    #send_mail(subject='Email Confirm', to='2364839934@qq.com', template='emails/confirm', user=user, token=token)
     send_mail(subject='Email Confirm', to=to or user.email, template='emails/confirm', user=user, token=token)
 
 

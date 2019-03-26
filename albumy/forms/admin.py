@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
+    :author: Qin Haining (秦海宁)
     :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
+    :copyright: © 2018 Qin Haining <2364839934@qq.com>
     :license: MIT, see LICENSE for more details.
 """
 from wtforms import StringField, SelectField, BooleanField, SubmitField

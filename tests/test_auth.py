@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    :author: Grey Li (李辉)
+    :author: Qin Haining (秦海宁)
     :url: http://greyli.com
-    :copyright: © 2018 Grey Li <withlihui@gmail.com>
+    :copyright: © 2018 Qin Haining <2364839934@qq.com>
     :license: MIT, see LICENSE for more details.
 """
 from flask import url_for
@@ -60,7 +60,7 @@ class AuthTestCase(BaseTestCase):
 
     def test_register_account(self):
         response = self.client.post(url_for('auth.register'), data=dict(
-            name='Grey Li',
+            name='Qin Haining',
             email='test@helloflask.com',
             username='test',
             password='12345678',
